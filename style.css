@@ -134,3 +134,41 @@
     margin-bottom: 30px;
     cursor: pointer;
 }
+
+@media(max-width: 650px) {
+    
+    .card{
+        width: 375px;
+        height: 812px;
+        padding: 15px 25px;
+        justify-content: center;
+    }
+
+    .form-name{
+        margin-bottom: -35px;
+    }
+
+   .email-pass{
+       order: -2;
+       width: 100%;
+   }
+
+   #email{
+       margin-bottom: -35px;
+   }
+   .phone-birthday{
+       width: 48%;
+       margin-top: -35px;
+   }
+
+   .container-register{
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: -5px;
+   }
+
+   .container #button{
+       width: 100%;
+       height: 56px;
+   }
+}
