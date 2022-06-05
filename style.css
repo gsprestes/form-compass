@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 620px;
+    height: 763px;
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+
+.header{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.container-form{
+   width: 100%;
+}
+
+
+.form-name #name{
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px 5px;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.form-name #name:hover{
+    border-bottom: 2px solid #0DBDBD;
+}
+
+.form-name label{
+    color: #767676;
+}
+
+.mid-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mid-form input{
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.mid-form label{
+    color: #767676;
+}
+
+.mid-form input:hover{
+    border-bottom: 2px solid #0DBDBD;
+}
+
+.email-pass{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-bottom: 50px;
+}
+
+.email-pass input{
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.phone-birthday{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.phone-birthday input{
+    width: 100%;
+    padding: 10px 5px;
+}
