@@ -95,3 +95,42 @@
     width: 100%;
     padding: 10px 5px;
 }
+
+.container-register{
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.checkbox-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+}
+
+.checkbox-wrapper span{
+    color: #0DBDBD;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input{
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.container-register #button{
+    height: 40px;
+    width: 81px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0DBDBD;
+    color: white;
+    font-size: 1em;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
