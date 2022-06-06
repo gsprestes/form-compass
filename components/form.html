@@ -1,34 +1,42 @@
 <form class="container-form" action="javascript:void(0);">
-    <h1>intern sign up</h1>
+    <h1 class="title">intern sign up</h1>
     <div class="form-name">
         <label>Full name*</label>
         <input id="name" name="name" type="text" placeholder="Name">
+        <p class="error">Name Invalid!</p>
     </div>
     <div class="mid-form">
-        <div class="email-pass">
+        <div class="email-pass email">
             <label>Email* </label>
-            <input id="email" type="email" name="email" placeholder="foo@bar.com"> 
+            <input id="email" type="email" name="email" placeholder="foo@bar.com">
+            <p class="error">Email Invalid!</p>
         </div>
         
-        <div class="phone-birthday">
+        <div class="phone-birthday phone">
             <label>Phone*</label>
             <input id="phone" type="tel" name="phone" placeholder="(83) 00000-0000">
+            <p class="error">Phone Invalid!</p>
         </div>
 
-        <div class="email-pass">
+        <div class="email-pass pass">
             <label>Password*</label>
             <input id="password" type="password" name="password" placeholder="Password">
+            <p class="error">Password Invalid!</p>
         </div>
 
-        <div class="phone-birthday">
+        <div class="phone-birthday birthday">
             <label>Birthday*</label>
             <input id="birthday" type="date">
+            <p class="error">Birthday Invalid!</p>
         </div>
     </div>
     <div class="container-register">
-        <div class="checkbox-wrapper">
-            <input id="terms" type="checkbox">
-            <label>I accept the <span>Terms and privacy</span></label>
+        <div class="terms">
+            <div class="checkbox-wrapper">
+                <input id="terms" type="checkbox">
+                <label>I accept the <span>Terms and privacy</span></label>
+            </div>
+            <p class="error">You must have to accept the terms!</p>
         </div>
         <button id="button">Register</button>
     </div>
