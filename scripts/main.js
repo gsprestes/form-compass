@@ -1,4 +1,8 @@
 // navigation
+const addItemStorage = (name, value) => {
+    localStorage.setItem(name, value);
+}
+
 const routes = {
     "/": "components/form.html",
     "/sent": "components/success.html"
@@ -76,6 +80,18 @@ const isValid = () => {
             p.setAttribute('style', 'visibility:visible');
             validation = false;
     }
+
+    if(validation){
+        addItemStorage((new Date()).toString(), JSON.stringify({
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            password: password.value,
+            birthday: birthday.value,
+            terms: terms.value
+        }));
+    }
+
     return validation;
 }
 
@@ -100,5 +116,5 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 const goBack = () => {
-    // to do later
+    goForm();
 }

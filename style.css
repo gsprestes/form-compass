@@ -135,6 +135,7 @@
 .checkbox-wrapper input{
     min-width: 20px;
     min-height: 20px;
+    cursor: pointer;
 }
 
 .container-register #button{
@@ -169,6 +170,9 @@
     background: #0DBDBD;
     border-radius: 10px;
     border: none;
+    font-size: 2.25em;
+    color: white;
+    cursor: pointer;
 }
 
 .error{
